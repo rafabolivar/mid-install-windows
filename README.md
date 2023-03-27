@@ -66,22 +66,21 @@ B --> C(System Timezone)
 
 Edit the variables in the `midinstall.ps1` script to fit your needs:
 
-    INSTANCE="<name_of_your_instance>"
-    MIDNAME="<name_of_your_midserver>"
-    MIDUSER="<name_of_your_miduser>"
-    MIDPASSWD="<your_miduser_password>"
-    MIDSW="<url_to_download_deb_package_from>"
-    MIDGPG="<url_to_download_gpg_key_zip_from>"
+$MID_NAME = "<name_of_your_midserver>"
+$MID_USERNAME= "<name_of_your_miduser>"
+$MID_PASSWORD = '<your_miduser_password>'
+$INSTANCE_URL = '<full_url_of_your_instance>'
+$SA_NAME = "<name_of_desired_windows_service_user>"
+$SA_PASSWORD = '<your_desired_windows_service_user_password>'
 
-You can get the links for the deb package and the GPG key from your Instance, under:
+You can get the links for the Windows msi package under:
 ```mermaid
 graph LR
 A(MID Server) --> B(Downloads)
 ```
 
-Execute the installation script:
+Execute the powershell installation script:
 
-    chmod a+x ~/midserver/midinstall.sh
-    ~/midserver/midinstall.sh
+    C:\Users\Administrator\Documents\midinstall.ps1
 
 The Script will install required tools (if needed), download the MID Server software, install it and validate it with your Instance. Enjoy it.
