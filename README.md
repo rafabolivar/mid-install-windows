@@ -54,9 +54,8 @@ Click *Save* and that's it.
 
 ## Installing your MID Server
 
-Once your Windows Server is running, connect via RDP and clone this repository by using the `git` command:
-
-    git clone https://github.com/rafabolivar/servicenow-midinstall.git ~/midserver
+Once your Windows Server is running, connect via RDP and download [this file](https://raw.githubusercontent.com/rafabolivar/mid-install-windows/main/midinstall.ps1).
+   
 
 Check that your instance Timezone is the same in your Ubuntu Server, otherwise MID Server validation process could get stuck. You can do this in your instance going to:
 ```mermaid
@@ -65,7 +64,7 @@ A(System Properties) --> B(Basic Configuration)
 B --> C(System Timezone)
 ```
 
-Edit the variables in the `midinstall.sh` script to fit your needs:
+Edit the variables in the `midinstall.ps1` script to fit your needs:
 
     INSTANCE="<name_of_your_instance>"
     MIDNAME="<name_of_your_midserver>"
