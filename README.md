@@ -57,7 +57,7 @@ Click *Save* and that's it.
 Once your Windows Server is running, connect via RDP and download [this file](https://raw.githubusercontent.com/rafabolivar/mid-install-windows/main/midinstall.ps1).
    
 
-Check that your instance Timezone is the same in your Ubuntu Server, otherwise MID Server validation process could get stuck. You can do this in your instance going to:
+Check that your instance Timezone is the same in your Windows Server, otherwise MID Server validation process could get stuck. You can do this in your instance going to:
 ```mermaid
 graph LR
 A(System Properties) --> B(Basic Configuration)
